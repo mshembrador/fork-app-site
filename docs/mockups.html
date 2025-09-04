@@ -1,0 +1,1491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fork App - Complete UI Mockups</title>
+    <meta name="description" content="Complete Fork app interface mockups - all screens and user flows">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        .logo {
+            font-size: 80px;
+            margin-bottom: 20px;
+            /* animation: float 3s ease-in-out infinite; */
+        }
+
+        .header {
+            text-align: center;
+            color: white;
+            margin-bottom: 50px;
+        }
+        
+        .header h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+        
+        .header p {
+            font-size: 20px;
+            opacity: 0.95;
+        }
+        
+        .back-link {
+            color: white;
+            opacity: 0.9;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+        }
+        
+        .back-link:hover {
+            opacity: 1;
+        }
+        
+        .mockups-container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        .section-title {
+            color: white;
+            font-size: 28px;
+            font-weight: 600;
+            text-align: center;
+            margin: 40px 0 30px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+        }
+        
+        .mockup-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        
+        .mockup-card {
+            background: white;
+            border-radius: 20px;
+            padding: 25px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+        
+        .mockup-title {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: #333;
+            text-align: center;
+        }
+        
+        .phone-frame {
+            width: 100%;
+            max-width: 380px;
+            margin: 0 auto;
+            display: block;
+        }
+        
+        .description {
+            margin-top: 20px;
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 12px;
+            font-size: 14px;
+            color: #666;
+            line-height: 1.5;
+        }
+        
+        @media (max-width: 768px) {
+            .mockup-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .header h1 {
+                font-size: 36px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="icon.png" alt="Fork" class="logo" style="width: 150px; height: 150px; border-radius: 20px;">
+        <h1>Fork</h1>
+        <p>Complete UI Mockups - All Screens</p>
+        <a href="index.html" class="back-link">← Back to homepage</a>
+    </div>
+    
+    <div class="mockups-container">
+        
+        <!-- Main Flow Section -->
+        <h2 class="section-title">Main User Flow</h2>
+        <div class="mockup-grid">
+            
+            <!-- Dashboard Screen -->
+            <!-- Updated Dashboard Screen -->
+<div class="mockup-card">
+    <h3 class="mockup-title">1. Dashboard - Your Limits Today (10% Increments)</h3>
+    <svg class="phone-frame" viewBox="0 0 380 820" xmlns="http://www.w3.org/2000/svg">
+        <!-- Phone Frame -->
+        <rect width="380" height="820" rx="40" fill="#000"/>
+        <rect x="10" y="10" width="360" height="800" rx="35" fill="#fff"/>
+        
+        <!-- Status Bar -->
+        <rect x="10" y="10" width="360" height="44" rx="35" fill="#f8f9fa"/>
+        <text x="30" y="37" font-size="16" font-weight="600">9:41 AM</text>
+        <text x="330" y="37" font-size="16" text-anchor="end">🔋</text>
+        
+        <!-- Header -->
+        <text x="30" y="90" font-size="32" font-weight="700">Good Morning!</text>
+        <text x="30" y="120" font-size="16" fill="#666">Your limits for today</text>
+        
+        <!-- Limit Cards with Chunked Progress -->
+        
+        <!-- Social Media Card - 70% (7 chunks filled) -->
+        <g transform="translate(20, 150)">
+            <rect width="340" height="100" rx="16" fill="#f0f4ff" stroke="#e1e8ff" stroke-width="1"/>
+            <text x="20" y="35" font-size="20">📱</text>
+            <text x="50" y="35" font-size="18" font-weight="600">Social Media Scrolling</text>
+            <text x="50" y="55" font-size="14" fill="#666">5 apps selected</text>
+            
+            <!-- 10 Discrete Chunks -->
+            <g transform="translate(50, 70)">
+                <!-- Filled chunks (7 of 10) -->
+                <rect x="0" y="0" width="18" height="8" rx="2" fill="#667eea"/>
+                <rect x="20" y="0" width="18" height="8" rx="2" fill="#667eea"/>
+                <rect x="40" y="0" width="18" height="8" rx="2" fill="#667eea"/>
+                <rect x="60" y="0" width="18" height="8" rx="2" fill="#667eea"/>
+                <rect x="80" y="0" width="18" height="8" rx="2" fill="#667eea"/>
+                <rect x="100" y="0" width="18" height="8" rx="2" fill="#667eea"/>
+                <rect x="120" y="0" width="18" height="8" rx="2" fill="#667eea"/>
+                <!-- Empty chunks (3 of 10) -->
+                <rect x="140" y="0" width="18" height="8" rx="2" fill="#e1e8ff"/>
+                <rect x="160" y="0" width="18" height="8" rx="2" fill="#e1e8ff"/>
+                <rect x="180" y="0" width="18" height="8" rx="2" fill="#e1e8ff"/>
+            </g>
+            
+            <text x="260" y="78" font-size="14" font-weight="500">70%</text>
+        </g>
+        
+        <!-- Gaming Card - 30% (3 chunks filled) -->
+        <g transform="translate(20, 270)">
+            <rect width="340" height="100" rx="16" fill="#fff0f0" stroke="#ffe1e1" stroke-width="1"/>
+            <text x="20" y="35" font-size="20">🎮</text>
+            <text x="50" y="35" font-size="18" font-weight="600">Gaming Time</text>
+            <text x="50" y="55" font-size="14" fill="#666">3 apps selected</text>
+            
+            <!-- 10 Discrete Chunks -->
+            <g transform="translate(50, 70)">
+                <!-- Filled chunks (3 of 10) -->
+                <rect x="0" y="0" width="18" height="8" rx="2" fill="#ff6b6b"/>
+                <rect x="20" y="0" width="18" height="8" rx="2" fill="#ff6b6b"/>
+                <rect x="40" y="0" width="18" height="8" rx="2" fill="#ff6b6b"/>
+                <!-- Empty chunks (7 of 10) -->
+                <rect x="60" y="0" width="18" height="8" rx="2" fill="#ffe1e1"/>
+                <rect x="80" y="0" width="18" height="8" rx="2" fill="#ffe1e1"/>
+                <rect x="100" y="0" width="18" height="8" rx="2" fill="#ffe1e1"/>
+                <rect x="120" y="0" width="18" height="8" rx="2" fill="#ffe1e1"/>
+                <rect x="140" y="0" width="18" height="8" rx="2" fill="#ffe1e1"/>
+                <rect x="160" y="0" width="18" height="8" rx="2" fill="#ffe1e1"/>
+                <rect x="180" y="0" width="18" height="8" rx="2" fill="#ffe1e1"/>
+            </g>
+            
+            <text x="260" y="78" font-size="14" font-weight="500">30%</text>
+        </g>
+        
+        <!-- News Card - 100% (all 10 chunks filled) -->
+        <g transform="translate(20, 390)">
+            <rect width="340" height="120" rx="16" fill="#fff9e6" stroke="#ffeb99" stroke-width="1"/>
+            <text x="20" y="35" font-size="20">📰</text>
+            <text x="50" y="35" font-size="18" font-weight="600">Morning News</text>
+            <text x="50" y="55" font-size="14" fill="#666">3 apps selected</text>
+            
+            <!-- 10 Discrete Chunks - ALL FILLED -->
+            <g transform="translate(50, 70)">
+                <rect x="0" y="0" width="18" height="8" rx="2" fill="#ffc107"/>
+                <rect x="20" y="0" width="18" height="8" rx="2" fill="#ffc107"/>
+                <rect x="40" y="0" width="18" height="8" rx="2" fill="#ffc107"/>
+                <rect x="60" y="0" width="18" height="8" rx="2" fill="#ffc107"/>
+                <rect x="80" y="0" width="18" height="8" rx="2" fill="#ffc107"/>
+                <rect x="100" y="0" width="18" height="8" rx="2" fill="#ffc107"/>
+                <rect x="120" y="0" width="18" height="8" rx="2" fill="#ffc107"/>
+                <rect x="140" y="0" width="18" height="8" rx="2" fill="#ffc107"/>
+                <rect x="160" y="0" width="18" height="8" rx="2" fill="#ffc107"/>
+                <rect x="180" y="0" width="18" height="8" rx="2" fill="#ffc107"/>
+            </g>
+            
+            <text x="260" y="78" font-size="14" font-weight="500" fill="#ff6b6b">100%</text>
+            <text x="50" y="100" font-size="13" fill="#666">→ Chose: Walk outside • Stayed away: 47m 🎉</text>
+        </g>
+        
+        <!-- Add Limit Button -->
+        <g transform="translate(20, 530)">
+            <rect width="340" height="56" rx="28" fill="#667eea"/>
+            <text x="170" y="36" font-size="16" font-weight="600" fill="white" text-anchor="middle">+ Add New Limit</text>
+        </g>
+        
+        <!-- Small note about updates -->
+        <text x="190" y="610" font-size="11" fill="#999" text-anchor="middle">Progress updates every 10%</text>
+        
+        <!-- Bottom Tab Bar -->
+        <rect x="10" y="740" width="360" height="70" fill="#f8f9fa"/>
+        <g transform="translate(45, 755)">
+            <text x="0" y="25" font-size="24" text-anchor="middle">🏠</text>
+            <text x="0" y="42" font-size="11" text-anchor="middle" fill="#667eea">Home</text>
+        </g>
+        <g transform="translate(135, 755)">
+            <text x="0" y="25" font-size="24" text-anchor="middle">📊</text>
+            <text x="0" y="42" font-size="11" text-anchor="middle" fill="#999">Journal</text>
+        </g>
+        <g transform="translate(225, 755)">
+            <text x="0" y="25" font-size="24" text-anchor="middle">🎯</text>
+            <text x="0" y="42" font-size="11" text-anchor="middle" fill="#999">Choices</text>
+        </g>
+        <g transform="translate(315, 755)">
+            <text x="0" y="25" font-size="24" text-anchor="middle">⚙️</text>
+            <text x="0" y="42" font-size="11" text-anchor="middle" fill="#999">Settings</text>
+        </g>
+    </svg>
+    <div class="description">
+        <strong>10% increment display:</strong> Progress shown as 10 discrete chunks, not smooth bar. Updates jump from 30% → 40% → 50% etc. Honest about tracking granularity. Shows percentage clearly. Note at bottom: "Progress updates every 10%"
+    </div>
+</div>
+            
+            <!-- iOS App Selector (FamilyActivityPicker) -->
+            <div class="mockup-card">
+                <h3 class="mockup-title">2. iOS System App Selector</h3>
+                <svg class="phone-frame" viewBox="0 0 380 820" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Phone Frame -->
+                    <rect width="380" height="820" rx="40" fill="#000"/>
+                    <rect x="10" y="10" width="360" height="800" rx="35" fill="#f2f2f7"/>
+                    
+                    <!-- iOS Modal Header -->
+                    <rect x="10" y="10" width="360" height="100" rx="35" fill="white"/>
+                    <rect x="175" y="20" width="30" height="4" rx="2" fill="#c6c6c8"/>
+                    
+                    <!-- Navigation -->
+                    <text x="30" y="65" font-size="17" fill="#007AFF">Cancel</text>
+                    <text x="190" y="65" font-size="17" font-weight="600" text-anchor="middle">Choose Apps</text>
+                    <text x="350" y="65" font-size="17" fill="#007AFF" font-weight="600" text-anchor="end">Add</text>
+                    
+                    <!-- Search Bar -->
+                    <g transform="translate(20, 120)">
+                        <rect width="340" height="36" rx="10" fill="#e5e5e7"/>
+                        <text x="35" y="24" font-size="17" fill="#8e8e93">🔍 Search</text>
+                    </g>
+                    
+                    <!-- Categories Section -->
+                    <text x="30" y="185" font-size="13" font-weight="600" fill="#6c6c70">CATEGORIES</text>
+                    
+                    <g transform="translate(20, 200)">
+                        <rect width="340" height="44" fill="white"/>
+                        <rect x="15" y="12" width="20" height="20" rx="4" fill="#ff3b30"/>
+                        <text x="15" y="27" font-size="12" fill="white" text-anchor="middle">⚡</text>
+                        <text x="45" y="28" font-size="17">Social Networking</text>
+                        <text x="320" y="28" font-size="17" fill="#c7c7cc" text-anchor="end">›</text>
+                        <line x1="45" y1="43" x2="340" y2="43" stroke="#e5e5e7" stroke-width="0.5"/>
+                    </g>
+                    
+                    <!-- Apps Section -->
+                    <text x="30" y="285" font-size="13" font-weight="600" fill="#6c6c70">APPS</text>
+                    
+                    <!-- Individual Apps with Checkboxes -->
+                    <g transform="translate(20, 300)">
+                        <rect width="340" height="44" fill="white"/>
+                        <rect x="10" y="10" width="24" height="24" rx="4" fill="url(#instagram-gradient)"/>
+                        <text x="45" y="28" font-size="17">Instagram</text>
+                        <!-- Selected Checkbox -->
+                        <circle cx="320" cy="22" r="11" fill="none" stroke="#007AFF" stroke-width="2"/>
+                        <circle cx="320" cy="22" r="9" fill="#007AFF"/>
+                        <path d="M314 22 l3 3 l6 -7" stroke="white" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                        <line x1="45" y1="43" x2="340" y2="43" stroke="#e5e5e7" stroke-width="0.5"/>
+                    </g>
+                    
+                    <g transform="translate(20, 344)">
+                        <rect width="340" height="44" fill="white"/>
+                        <rect x="10" y="10" width="24" height="24" rx="4" fill="#000"/>
+                        <text x="22" y="27" font-size="14" fill="white" text-anchor="middle">♪</text>
+                        <text x="45" y="28" font-size="17">TikTok</text>
+                        <!-- Selected Checkbox -->
+                        <circle cx="320" cy="22" r="11" fill="none" stroke="#007AFF" stroke-width="2"/>
+                        <circle cx="320" cy="22" r="9" fill="#007AFF"/>
+                        <path d="M314 22 l3 3 l6 -7" stroke="white" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                        <line x1="45" y1="43" x2="340" y2="43" stroke="#e5e5e7" stroke-width="0.5"/>
+                    </g>
+                    
+                    <!-- Instagram gradient definition -->
+                    <defs>
+                        <linearGradient id="instagram-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#f09433" />
+                            <stop offset="25%" style="stop-color:#e6683c" />
+                            <stop offset="50%" style="stop-color:#dc2743" />
+                            <stop offset="75%" style="stop-color:#cc2366" />
+                            <stop offset="100%" style="stop-color:#bc1888" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+                <div class="description">
+                    <strong>iOS System Picker (FamilyActivityPicker):</strong> This is Apple's UI, not Fork's. Users see their actual apps with real names and icons. Fork only receives anonymous tokens after selection.
+                    <br><br>
+                    <em>Note: App names shown are examples. The actual picker shows whatever apps are installed on the user's device.</em>
+                </div>
+            </div>
+            
+            <!-- Add Limit Flow with Custom Notification Text -->
+            <div class="mockup-card">
+                <h3 class="mockup-title">3. Name Your Limit</h3>
+                <svg class="phone-frame" viewBox="0 0 380 820" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Phone Frame -->
+                    <rect width="380" height="820" rx="40" fill="#000"/>
+                    <rect x="10" y="10" width="360" height="800" rx="35" fill="#fff"/>
+                    
+                    <!-- Status Bar -->
+                    <rect x="10" y="10" width="360" height="44" rx="35" fill="#f8f9fa"/>
+                    <text x="30" y="37" font-size="16" font-weight="600">9:41 AM</text>
+                    
+                    <!-- Navigation -->
+                    <text x="30" y="90" font-size="18" fill="#667eea">← Cancel</text>
+                    <text x="330" y="90" font-size="18" fill="#667eea" text-anchor="end">Save</text>
+                    
+                    <!-- Title -->
+                    <text x="190" y="140" font-size="24" font-weight="700" text-anchor="middle">Name Your Limit</text>
+                    
+                    <!-- Success Message -->
+                    <g transform="translate(40, 170)">
+                        <rect width="300" height="50" rx="10" fill="#f0fff4"/>
+                        <text x="15" y="32" font-size="16">✅ You've selected 5 apps</text>
+                    </g>
+                    
+                    <!-- Input Field -->
+                    <text x="40" y="260" font-size="16" font-weight="600">What would you like to call this limit?</text>
+                    <g transform="translate(40, 280)">
+                        <rect width="300" height="50" rx="10" fill="#f8f9fa" stroke="#ddd" stroke-width="1"/>
+                        <text x="15" y="32" font-size="16">Social Media Scrolling</text>
+                        <line x1="188" y1="15" x2="188" y2="35" stroke="#667eea" stroke-width="2">
+                            <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
+                        </line>
+                    </g>
+                    
+                    <!-- Preset Suggestions -->
+                    <text x="40" y="370" font-size="15" fill="#666">Or choose a preset:</text>
+                    <g transform="translate(40, 390)">
+                        <rect width="90" height="36" rx="18" fill="#f0f4ff"/>
+                        <text x="45" y="24" font-size="14" text-anchor="middle">📱 Social</text>
+                    </g>
+                    <g transform="translate(140, 390)">
+                        <rect width="90" height="36" rx="18" fill="#fff0f0"/>
+                        <text x="45" y="24" font-size="14" text-anchor="middle">📰 News</text>
+                    </g>
+                    <g transform="translate(240, 390)">
+                        <rect width="90" height="36" rx="18" fill="#f0fff4"/>
+                        <text x="45" y="24" font-size="14" text-anchor="middle">🛍️ Shopping</text>
+                    </g>
+                    
+                    <!-- Time Limit -->
+                    <text x="40" y="470" font-size="16" font-weight="600">Daily Limit:</text>
+                    <g transform="translate(40, 490)">
+                        <rect width="300" height="60" rx="10" fill="#f8f9fa"/>
+                        <text x="30" y="38" font-size="24" font-weight="600">30</text>
+                        <text x="70" y="38" font-size="18" fill="#666">minutes per day</text>
+                        <text x="270" y="30" font-size="20" text-anchor="middle" fill="#667eea">+</text>
+                        <text x="270" y="45" font-size="20" text-anchor="middle" fill="#667eea">−</text>
+                    </g>
+                    
+                    <!-- Custom Notification Text (NEW) -->
+                    <text x="40" y="585" font-size="16" font-weight="600">Notification message (optional)</text>
+                    <g transform="translate(40, 605)">
+                        <rect width="300" height="50" rx="10" fill="#f8f9fa" stroke="#ddd" stroke-width="1"/>
+                        <text x="15" y="32" font-size="15" fill="#999">Ready for something different?</text>
+                    </g>
+                    <text x="40" y="665" font-size="12" fill="#666">What Fork says when you hit this limit (60 chars max)</text>
+
+                    <!-- Continue Button -->
+                    <g transform="translate(40, 700)">
+                        <rect width="300" height="56" rx="28" fill="#667eea"/>
+                        <text x="150" y="36" font-size="16" font-weight="600" fill="white" text-anchor="middle">Continue →</text>
+                    </g>
+                </svg>
+                <div class="description">
+                    After selecting apps and naming limit, users can optionally set custom notification text. Shows placeholder with default message. Keeps original preset name suggestions. Character limit noted. Fork only receives anonymous tokens, not app names. Presets help with common categories.
+                </div>
+            </div>
+        </div>
+        
+        <!-- Choices Management Section -->
+        <h2 class="section-title">Choices Management</h2>
+        <div class="mockup-grid">
+            
+            <!-- Choices List -->
+            <div class="mockup-card">
+                <h3 class="mockup-title">Choices List</h3>
+                <svg class="phone-frame" viewBox="0 0 380 820" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Phone Frame -->
+                    <rect width="380" height="820" rx="40" fill="#000"/>
+                    <rect x="10" y="10" width="360" height="800" rx="35" fill="#fff"/>
+                    
+                    <!-- Header -->
+                    <rect x="10" y="10" width="360" height="44" rx="35" fill="#f8f9fa"/>
+                    <text x="30" y="37" font-size="16" font-weight="600">9:41 AM</text>
+                    
+                    <text x="30" y="90" font-size="28" font-weight="700">Things I'd Rather Do</text>
+                    <text x="30" y="120" font-size="16" fill="#666">Your choices when limits hit</text>
+                    
+                    <!-- Add Button -->
+                    <g transform="translate(320, 70)">
+                        <rect width="40" height="40" rx="20" fill="#667eea"/>
+                        <text x="20" y="26" font-size="20" fill="white" text-anchor="middle">+</text>
+                    </g>
+                    
+                    <!-- Choice Items -->
+                    <!-- Starred Item -->
+                    <g transform="translate(20, 150)">
+                        <rect width="340" height="70" rx="12" fill="#fff" stroke="#667eea" stroke-width="2"/>
+                        <text x="15" y="25" font-size="18">⭐</text>
+                        <text x="40" y="25" font-size="16" font-weight="600">Do 5 Air Squats</text>
+                        <text x="40" y="45" font-size="14" fill="#666">🔄 Ongoing • Anytime</text>
+                        <text x="305" y="35" font-size="14" fill="#667eea">Edit</text>
+                    </g>
+                    
+                    <!-- Completable Task -->
+                    <g transform="translate(20, 235)">
+                        <rect width="340" height="70" rx="12" fill="#fff" stroke="#eee" stroke-width="1"/>
+                        <text x="15" y="35" font-size="16" font-weight="600">Read The Hobbit Ch 3</text>
+                        <text x="15" y="55" font-size="14" fill="#666">✔ Completable • Evenings</text>
+                        <rect x="270" y="20" width="24" height="24" rx="4" fill="none" stroke="#667eea" stroke-width="2"/>
+                        <text x="305" y="35" font-size="14" fill="#667eea">Edit</text>
+                    </g>
+                    
+                    <!-- Repeatable Task -->
+                    <g transform="translate(20, 320)">
+                        <rect width="340" height="70" rx="12" fill="#fff" stroke="#eee" stroke-width="1"/>
+                        <text x="15" y="35" font-size="16" font-weight="600">Call Loved One</text>
+                        <text x="15" y="55" font-size="14" fill="#666">🔁 Once daily • Evenings</text>
+                        <text x="305" y="35" font-size="14" fill="#667eea">Edit</text>
+                    </g>
+                    
+                    <!-- Ongoing Task -->
+                    <g transform="translate(20, 405)">
+                        <rect width="340" height="70" rx="12" fill="#fff" stroke="#eee" stroke-width="1"/>
+                        <text x="15" y="35" font-size="16" font-weight="600">Walk around the block</text>
+                        <text x="15" y="55" font-size="14" fill="#666">🔄 Ongoing • Mornings</text>
+                        <text x="305" y="35" font-size="14" fill="#667eea">Edit</text>
+                    </g>
+                    
+                    <!-- Completable with Checkbox -->
+                    <g transform="translate(20, 490)">
+                        <rect width="340" height="70" rx="12" fill="#fff" stroke="#eee" stroke-width="1"/>
+                        <text x="15" y="35" font-size="16" font-weight="600">Finish project proposal</text>
+                        <text x="15" y="55" font-size="14" fill="#666">✔ Completable • Weekdays</text>
+                        <rect x="270" y="20" width="24" height="24" rx="4" fill="none" stroke="#667eea" stroke-width="2"/>
+                        <text x="305" y="35" font-size="14" fill="#667eea">Edit</text>
+                    </g>
+                    
+                    <!-- Bottom Tab Bar -->
+                    <rect x="10" y="740" width="360" height="70" fill="#f8f9fa"/>
+                    <g transform="translate(45, 755)">
+                        <text x="0" y="25" font-size="24" text-anchor="middle">🏠</text>
+                        <text x="0" y="42" font-size="11" text-anchor="middle" fill="#999">Home</text>
+                    </g>
+                    <g transform="translate(135, 755)">
+                        <text x="0" y="25" font-size="24" text-anchor="middle">📊</text>
+                        <text x="0" y="42" font-size="11" text-anchor="middle" fill="#999">Journal</text>
+                    </g>
+                    <g transform="translate(225, 755)">
+                        <text x="0" y="25" font-size="24" text-anchor="middle">🎯</text>
+                        <text x="0" y="42" font-size="11" text-anchor="middle" fill="#667eea">Choices</text>
+                    </g>
+                    <g transform="translate(315, 755)">
+                        <text x="0" y="25" font-size="24" text-anchor="middle">⚙️</text>
+                        <text x="0" y="42" font-size="11" text-anchor="middle" fill="#999">Settings</text>
+                    </g>
+                </svg>
+                <div class="description">
+                    Shows all choices with visual indicators: ⭐ starred, 🔄 ongoing, 🔁 repeatable (once daily), ✔ completable. One-tap checkbox to mark tasks complete. Shows time windows for each choice.
+                </div>
+            </div>
+            
+            <!-- Create Choice -->
+            <div class="mockup-card">
+                <h3 class="mockup-title">Create Choice</h3>
+                <svg class="phone-frame" viewBox="0 0 380 820" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Phone Frame -->
+                    <rect width="380" height="820" rx="40" fill="#000"/>
+                    <rect x="10" y="10" width="360" height="800" rx="35" fill="#fff"/>
+                    
+                    <!-- Header -->
+                    <rect x="10" y="10" width="360" height="44" rx="35" fill="#f8f9fa"/>
+                    <text x="30" y="37" font-size="16" font-weight="600">9:41 AM</text>
+                    
+                    <!-- Navigation -->
+                    <text x="30" y="90" font-size="18" fill="#667eea">← Cancel</text>
+                    <text x="330" y="90" font-size="18" fill="#667eea" text-anchor="end">Save</text>
+                    
+                    <!-- Title -->
+                    <text x="190" y="140" font-size="24" font-weight="700" text-anchor="middle">New Choice</text>
+                    
+                    <!-- Choice Name -->
+                    <text x="40" y="190" font-size="16" font-weight="600">What would you rather do?</text>
+                    <g transform="translate(40, 210)">
+                        <rect width="300" height="50" rx="10" fill="#f8f9fa" stroke="#ddd" stroke-width="1"/>
+                        <text x="15" y="32" font-size="16">Call Mom</text>
+                    </g>
+                    
+                    <!-- Type Selection - Now with 3 options -->
+                    <text x="40" y="290" font-size="16" font-weight="600">Type</text>
+                    
+                    <!-- Ongoing -->
+                    <g transform="translate(40, 310)">
+                        <rect width="95" height="60" rx="10" fill="#f8f9fa" stroke="#ddd" stroke-width="1"/>
+                        <text x="47" y="30" font-size="20" text-anchor="middle">🔄</text>
+                        <text x="47" y="50" font-size="11" text-anchor="middle" fill="#666">Always</text>
+                    </g>
+                    
+                    <!-- Repeatable - Selected -->
+                    <g transform="translate(142, 310)">
+                        <rect width="95" height="60" rx="10" fill="#667eea"/>
+                        <text x="47" y="30" font-size="20" text-anchor="middle">🔁</text>
+                        <text x="47" y="50" font-size="11" text-anchor="middle" fill="white">Once daily</text>
+                    </g>
+                    
+                    <!-- Completable -->
+                    <g transform="translate(245, 310)">
+                        <rect width="95" height="60" rx="10" fill="#f8f9fa" stroke="#ddd" stroke-width="1"/>
+                        <text x="47" y="30" font-size="20" text-anchor="middle">✔</text>
+                        <text x="47" y="50" font-size="11" text-anchor="middle" fill="#666">Until done</text>
+                    </g>
+                    
+                    <!-- Type Description -->
+                    <g transform="translate(40, 380)">
+                        <rect width="300" height="50" rx="10" fill="#f0f4ff"/>
+                        <text x="15" y="25" font-size="13" fill="#667eea">Won't show again today after selecting.</text>
+                        <text x="15" y="42" font-size="13" fill="#667eea">Resets tomorrow automatically.</text>
+                    </g>
+                    
+                    <!-- Star Option -->
+                    <g transform="translate(40, 445)">
+                        <rect width="300" height="60" rx="10" fill="#fff9e6" stroke="#ffeb99" stroke-width="1"/>
+                        <rect x="15" y="18" width="24" height="24" rx="4" fill="none" stroke="#667eea" stroke-width="2"/>
+                        <text x="50" y="35" font-size="16">⭐ Make this my go-to choice</text>
+                    </g>
+                    
+                    <!-- Time Window -->
+                    <text x="40" y="535" font-size="16" font-weight="600">When is this available? (optional)</text>
+                    <g transform="translate(40, 555)">
+                        <rect width="300" height="50" rx="10" fill="#f8f9fa" stroke="#ddd" stroke-width="1"/>
+                        <text x="15" y="32" font-size="16">Anytime</text>
+                        <text x="285" y="32" font-size="16" text-anchor="end">▼</text>
+                    </g>
+                    
+                    <!-- Save Button -->
+                    <g transform="translate(40, 640)">
+                        <rect width="300" height="56" rx="28" fill="#667eea"/>
+                        <text x="150" y="36" font-size="16" font-weight="600" fill="white" text-anchor="middle">Save Choice</text>
+                    </g>
+                </svg>
+                <div class="description">
+                    Create new choices with THREE types: Ongoing (always available), Repeatable (once per day), or Completable (until marked done). Shows contextual description for selected type.
+                </div>
+            </div>
+            
+        </div>
+        
+
+        <h2 class="section-title">App Choice Page</h2>
+<div class="mockup-grid">
+    
+    <!-- Choice Page (Notification Tap) -->
+    <div class="mockup-card">
+        <h3 class="mockup-title">Choice Page - Limit Reached</h3>
+        <svg class="phone-frame" viewBox="0 0 380 820" xmlns="http://www.w3.org/2000/svg">
+            <!-- Phone Frame -->
+            <rect width="380" height="820" rx="40" fill="#000"/>
+            <rect x="10" y="10" width="360" height="800" rx="35" fill="#fff"/>
+            
+            <!-- Status Bar (no navigation bar - modal presentation) -->
+            <rect x="10" y="10" width="360" height="44" rx="35" fill="#f8f9fa"/>
+            <text x="30" y="37" font-size="16" font-weight="600">9:41 AM</text>
+            
+            <!-- Swipe indicator (shows this is dismissible) -->
+            <rect x="175" y="20" width="30" height="4" rx="2" fill="#c6c6c8"/>
+            
+            <!-- Header -->
+            <text x="190" y="100" font-size="24" font-weight="700" text-anchor="middle">Social Media limit reached</text>
+            <text x="190" y="130" font-size="16" fill="#666" text-anchor="middle">You've used 30 minutes</text>
+            
+            <!-- Main message -->
+            <text x="190" y="170" font-size="18" font-weight="500" text-anchor="middle">Choose something better:</text>
+            
+            <!-- Starred Choice (if available) -->
+            <g transform="translate(30, 200)">
+                <rect width="320" height="80" rx="16" fill="#fff9e6" stroke="#ffeb99" stroke-width="2"/>
+                <text x="20" y="35" font-size="24">⭐</text>
+                <text x="55" y="35" font-size="18" font-weight="600">Do 5 Air Squats</text>
+                <text x="55" y="55" font-size="14" fill="#666">Your go-to choice</text>
+                <text x="300" y="45" font-size="20" fill="#667eea" text-anchor="end">›</text>
+            </g>
+            
+            <!-- Regular Choice 1 -->
+            <g transform="translate(30, 295)">
+                <rect width="320" height="70" rx="16" fill="white" stroke="#e5e5e7" stroke-width="1"/>
+                <text x="20" y="40" font-size="18" font-weight="500">Walk around the block</text>
+                <text x="300" y="40" font-size="20" fill="#667eea" text-anchor="end">›</text>
+            </g>
+            
+            <!-- Regular Choice 2 -->
+            <g transform="translate(30, 380)">
+                <rect width="320" height="70" rx="16" fill="white" stroke="#e5e5e7" stroke-width="1"/>
+                <text x="20" y="40" font-size="18" font-weight="500">Read a few pages</text>
+                <text x="300" y="40" font-size="20" fill="#667eea" text-anchor="end">›</text>
+            </g>
+            
+            <!-- Regular Choice 3 -->
+            <g transform="translate(30, 465)">
+                <rect width="320" height="70" rx="16" fill="white" stroke="#e5e5e7" stroke-width="1"/>
+                <text x="20" y="40" font-size="18" font-weight="500">Text someone hi</text>
+                <text x="300" y="40" font-size="20" fill="#667eea" text-anchor="end">›</text>
+            </g>
+            
+            <!-- Refresh Button -->
+            <g transform="translate(30, 555)">
+                <rect width="320" height="50" rx="25" fill="none" stroke="#667eea" stroke-width="2"/>
+                <text x="160" y="32" font-size="16" fill="#667eea" text-anchor="middle">↻ Refresh suggestions</text>
+            </g>
+            
+            <!-- Divider -->
+            <line x1="50" y1="630" x2="330" y2="630" stroke="#e5e5e7" stroke-width="1"/>
+            
+            <!-- Snooze Option -->
+            <g transform="translate(30, 650)">
+                <rect width="320" height="60" rx="16" fill="#f8f9fa"/>
+                <text x="160" y="38" font-size="16" fill="#999" text-anchor="middle">Snooze 5 min</text>
+            </g>
+            
+            <!-- Hint text at bottom -->
+            <text x="190" y="750" font-size="13" fill="#999" text-anchor="middle">Swipe down to dismiss</text>
+            
+            <!-- NO TAB BAR - This is a modal -->
+        </svg>
+        <div class="description">
+            <strong>Intervention screen (not navigatable):</strong> Only appears when tapping limit notification. Full-screen modal with no tab bar. Starred choice prominent at top. "Refresh suggestions" cycles through available choices. Snooze visually separated. Swipe down dismisses (soft snooze).
+        </div>
+    </div>
+    
+    <!-- Choice Page After Refresh -->
+    <div class="mockup-card">
+        <h3 class="mockup-title">After Refreshing Suggestions</h3>
+        <svg class="phone-frame" viewBox="0 0 380 820" xmlns="http://www.w3.org/2000/svg">
+            <!-- Phone Frame -->
+            <rect width="380" height="820" rx="40" fill="#000"/>
+            <rect x="10" y="10" width="360" height="800" rx="35" fill="#fff"/>
+            
+            <!-- Status Bar -->
+            <rect x="10" y="10" width="360" height="44" rx="35" fill="#f8f9fa"/>
+            <text x="30" y="37" font-size="16" font-weight="600">9:41 AM</text>
+            
+            <!-- Swipe indicator -->
+            <rect x="175" y="20" width="30" height="4" rx="2" fill="#c6c6c8"/>
+            
+            <!-- Header (same) -->
+            <text x="190" y="100" font-size="24" font-weight="700" text-anchor="middle">Social Media limit reached</text>
+            <text x="190" y="130" font-size="16" fill="#666" text-anchor="middle">You've used 30 minutes</text>
+            
+            <!-- Main message -->
+            <text x="190" y="170" font-size="18" font-weight="500" text-anchor="middle">Choose something better:</text>
+            
+            <!-- Starred Choice (always stays if exists) -->
+            <g transform="translate(30, 200)">
+                <rect width="320" height="80" rx="16" fill="#fff9e6" stroke="#ffeb99" stroke-width="2"/>
+                <text x="20" y="35" font-size="24">⭐</text>
+                <text x="55" y="35" font-size="18" font-weight="600">Do 5 Air Squats</text>
+                <text x="55" y="55" font-size="14" fill="#666">Your go-to choice</text>
+                <text x="300" y="45" font-size="20" fill="#667eea" text-anchor="end">›</text>
+            </g>
+            
+            <!-- NEW Choice 1 -->
+            <g transform="translate(30, 295)">
+                <rect width="320" height="70" rx="16" fill="white" stroke="#e5e5e7" stroke-width="1"/>
+                <text x="20" y="40" font-size="18" font-weight="500">Practice guitar for 5 min</text>
+                <text x="300" y="40" font-size="20" fill="#667eea" text-anchor="end">›</text>
+            </g>
+            
+            <!-- NEW Choice 2 -->
+            <g transform="translate(30, 380)">
+                <rect width="320" height="70" rx="16" fill="white" stroke="#e5e5e7" stroke-width="1"/>
+                <text x="20" y="40" font-size="18" font-weight="500">Clear one email</text>
+                <text x="300" y="40" font-size="20" fill="#667eea" text-anchor="end">›</text>
+            </g>
+            
+            <!-- NEW Choice 3 -->
+            <g transform="translate(30, 465)">
+                <rect width="320" height="70" rx="16" fill="white" stroke="#e5e5e7" stroke-width="1"/>
+                <text x="20" y="40" font-size="18" font-weight="500">Water the plants</text>
+                <text x="300" y="40" font-size="20" fill="#667eea" text-anchor="end">›</text>
+            </g>
+            
+            <!-- Refresh Button (can keep refreshing) -->
+            <g transform="translate(30, 555)">
+                <rect width="320" height="50" rx="25" fill="none" stroke="#667eea" stroke-width="2"/>
+                <text x="160" y="32" font-size="16" fill="#667eea" text-anchor="middle">↻ Refresh suggestions</text>
+            </g>
+            
+            <!-- Divider -->
+            <line x1="50" y1="630" x2="330" y2="630" stroke="#e5e5e7" stroke-width="1"/>
+            
+            <!-- Snooze Option -->
+            <g transform="translate(30, 650)">
+                <rect width="320" height="60" rx="16" fill="#f8f9fa"/>
+                <text x="160" y="38" font-size="16" fill="#999" text-anchor="middle">Snooze 5 min</text>
+            </g>
+            
+            <!-- Hint text -->
+            <text x="190" y="750" font-size="13" fill="#999" text-anchor="middle">Swipe down to dismiss</text>
+        </svg>
+        <div class="description">
+            <strong>After refresh:</strong> Starred choice always stays at top (if exists). Other 3 choices are replaced with new options from user's available pool. No tracking of refresh behavior (Fork philosophy).
+        </div>
+    </div>
+    
+</div>
+
+        <!-- iOS Notification Section -->
+        <h2 class="section-title">iOS Notification Behavior (Accurate)</h2>
+        <div class="mockup-grid">
+            
+            <!-- Collapsed State -->
+            <div class="mockup-card">
+                <h3 class="mockup-title">Initial Notification (Collapsed)</h3>
+                <svg class="phone-frame" viewBox="0 0 380 500" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Phone Frame -->
+                    <rect width="380" height="500" rx="40" fill="#000"/>
+                    <rect x="10" y="10" width="360" height="480" rx="35" fill="#1c1c1e"/>
+                    
+                    <!-- Status Bar -->
+                    <rect x="10" y="10" width="360" height="44" rx="35" fill="#1c1c1e"/>
+                    <text x="30" y="37" font-size="15" fill="white">9:41</text>
+                    
+                    <!-- Home Screen Blur -->
+                    <rect x="10" y="54" width="360" height="436" fill="#2c2c2e" opacity="0.95"/>
+                    
+                    <!-- Notification Banner -->
+                    <g transform="translate(20, 70)">
+                        <rect width="340" height="100" rx="16" fill="rgba(255, 255, 255, 0.98)"/>
+                        
+                        <!-- App Icon -->
+                        <rect x="12" y="12" width="36" height="36" rx="8" fill="#667eea"/>
+                        <text x="24" y="35" font-size="20" fill="white" text-anchor="middle">🍴</text>
+                        
+                        <text x="58" y="28" font-size="14" font-weight="600">Fork</text>
+                        <text x="328" y="28" font-size="12" fill="#999" text-anchor="end">now</text>
+                        
+                        <text x="58" y="48" font-size="15" font-weight="600">Social Media limit reached</text>
+                        <text x="58" y="68" font-size="14" fill="#666">You've used 30 minutes. Swipe down for</text>
+                        <text x="58" y="84" font-size="14" fill="#666">your choices.</text>
+                    </g>
+                </svg>
+                <div class="description">
+                    <strong>What users see first:</strong> Compact banner requiring swipe or 3D touch to see action buttons. Standard iOS styling.
+                </div>
+            </div>
+            
+            <!-- Expanded State -->
+            <div class="mockup-card">
+                <h3 class="mockup-title">After Swipe Down (Expanded)</h3>
+                <svg class="phone-frame" viewBox="0 0 380 500" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Phone Frame -->
+                    <rect width="380" height="500" rx="40" fill="#000"/>
+                    <rect x="10" y="10" width="360" height="480" rx="35" fill="#1c1c1e"/>
+                    
+                    <!-- Status Bar -->
+                    <rect x="10" y="10" width="360" height="44" rx="35" fill="#1c1c1e"/>
+                    <text x="30" y="37" font-size="15" fill="white">9:41</text>
+                    
+                    <!-- Home Screen Blur -->
+                    <rect x="10" y="54" width="360" height="436" fill="#2c2c2e" opacity="0.95"/>
+                    
+                    <!-- Expanded Notification -->
+                    <g transform="translate(20, 70)">
+                        <rect width="340" height="320" rx="16" fill="rgba(255, 255, 255, 0.98)"/>
+                        
+                        <!-- Header -->
+                        <rect x="12" y="12" width="36" height="36" rx="8" fill="#667eea"/>
+                        <text x="24" y="35" font-size="20" fill="white" text-anchor="middle">🍴</text>
+                        
+                        <text x="58" y="28" font-size="14" font-weight="600">Fork</text>
+                        <text x="328" y="28" font-size="12" fill="#999" text-anchor="end">now</text>
+                        
+                        <text x="58" y="48" font-size="15" font-weight="600">Social Media limit reached</text>
+                        <text x="20" y="80" font-size="14" fill="#333">You've used 30 minutes.</text>
+                        <text x="20" y="100" font-size="14" fill="#333">Choose something better:</text>
+                        
+                        <!-- Divider -->
+                        <line x1="20" y1="120" x2="320" y2="120" stroke="#e5e5e5" stroke-width="1"/>
+                        
+                        <!-- Action Buttons (iOS Standard) -->
+                        <g>
+                            <rect x="0" y="120" width="340" height="50" fill="transparent"/>
+                            <text x="20" y="150" font-size="16" font-weight="500" fill="#FFD700">⭐</text>
+                            <text x="40" y="150" font-size="16" fill="#007AFF">Do 5 Air Squats</text>
+                            <line x1="20" y1="170" x2="320" y2="170" stroke="#e5e5e5" stroke-width="0.5"/>
+                        </g>
+                        
+                        <g>
+                            <rect x="0" y="170" width="340" height="50" fill="transparent"/>
+                            <text x="20" y="200" font-size="16" fill="#007AFF">Walk around the block (5 min)</text>
+                            <line x1="20" y1="220" x2="320" y2="220" stroke="#e5e5e5" stroke-width="0.5"/>
+                        </g>
+                        
+                        <g>
+                            <rect x="0" y="220" width="340" height="50" fill="transparent"/>
+                            <text x="20" y="250" font-size="16" fill="#007AFF">Read Chapter 4 of Hitchikers Guide</text>
+                            <line x1="20" y1="270" x2="320" y2="270" stroke="#e5e5e5" stroke-width="0.5"/>
+                        </g>
+                        
+                        <g>
+                            <rect x="0" y="270" width="340" height="50" fill="transparent"/>
+                            <text x="20" y="300" font-size="16" fill="#8E8E93">Snooze 5 min</text>
+                        </g>
+                    </g>
+                    
+                    <!-- X to dismiss -->
+                    <g transform="translate(340, 60)">
+                        <circle cx="15" cy="15" r="12" fill="rgba(120, 120, 128, 0.3)"/>
+                        <text x="15" y="20" font-size="16" fill="white" text-anchor="middle">×</text>
+                    </g>
+                </svg>
+                <div class="description">
+                    <strong>Actual iOS capabilities:</strong> Plain text buttons, no custom colors (except star emoji for starred item), vertical stack. One-tap choices without opening app.
+                </div>
+            </div>
+            
+        </div>
+        <!-- Journal & Victories Section -->
+        <h2 class="section-title">Journal & Fork Victories</h2>
+        <div class="mockup-grid">
+            
+            <!-- Journal with Tabs -->
+            <div class="mockup-card">
+                <h3 class="mockup-title">Fork Victories Journal</h3>
+                <svg class="phone-frame" viewBox="0 0 380 820" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Phone Frame -->
+                    <rect width="380" height="820" rx="40" fill="#000"/>
+                    <rect x="10" y="10" width="360" height="800" rx="35" fill="#fff"/>
+                    
+                    <!-- Header -->
+                    <rect x="10" y="10" width="360" height="44" rx="35" fill="#f8f9fa"/>
+                    <text x="30" y="37" font-size="16" font-weight="600">9:41 AM</text>
+                    
+                    <text x="30" y="90" font-size="32" font-weight="700">Fork Victories</text>
+                    
+                    <!-- Tab Navigation -->
+                    <g transform="translate(20, 110)">
+                        <rect width="170" height="40" rx="8" fill="#667eea"/>
+                        <text x="85" y="26" font-size="15" font-weight="600" fill="white" text-anchor="middle">Today's Choices</text>
+                    </g>
+                    <g transform="translate(190, 110)">
+                        <rect width="170" height="40" rx="8" fill="#f8f9fa"/>
+                        <text x="85" y="26" font-size="15" fill="#666" text-anchor="middle">Completed ✔</text>
+                    </g>
+                    
+                    <!-- Stats Summary -->
+                    <g transform="translate(20, 170)">
+                        <rect width="340" height="80" rx="16" fill="#f0f4ff"/>
+                        <g transform="translate(30, 25)">
+                            <text x="0" y="0" font-size="32" font-weight="700">4</text>
+                            <text x="0" y="20" font-size="14" fill="#666">victories</text>
+                        </g>
+                        <g transform="translate(150, 25)">
+                            <text x="0" y="0" font-size="32" font-weight="700">2h 34m</text>
+                            <text x="0" y="20" font-size="14" fill="#666">reclaimed</text>
+                        </g>
+                        <text x="30" y="65" font-size="14" fill="#667eea">Your record: 2h 15m. Every minute away is a win.</text>
+                    </g>
+                    
+                    <!-- Journal Entries -->
+                    <!-- Morning Victory -->
+                    <g transform="translate(20, 270)">
+                        <rect width="340" height="90" rx="12" fill="#fff" stroke="#eee" stroke-width="1"/>
+                        <text x="15" y="25" font-size="14" fill="#999">8:32 AM</text>
+                        <text x="15" y="45" font-size="16" font-weight="600">Morning News limit</text>
+                        <text x="15" y="65" font-size="14" fill="#666">→ Chose: Made breakfast instead</text>
+                        <g transform="translate(240, 50)">
+                            <text x="0" y="0" font-size="14" font-weight="600" fill="#667eea" text-anchor="end">1h 23m</text>
+                            <text x="10" y="0" font-size="14">🎉</text>
+                        </g>
+                    </g>
+                    
+                    <!-- Lunch Victory -->
+                    <g transform="translate(20, 375)">
+                        <rect width="340" height="90" rx="12" fill="#fff" stroke="#eee" stroke-width="1"/>
+                        <text x="15" y="25" font-size="14" fill="#999">12:15 PM</text>
+                        <text x="15" y="45" font-size="16" font-weight="600">Social Media limit</text>
+                        <text x="15" y="65" font-size="14" fill="#666">→ Chose: Walk around block</text>
+                        <g transform="translate(240, 50)">
+                            <text x="0" y="0" font-size="14" font-weight="600" fill="#667eea" text-anchor="end">45m</text>
+                            <text x="10" y="0" font-size="14">✨</text>
+                        </g>
+                    </g>
+                    
+                    <!-- Afternoon Victory -->
+                    <g transform="translate(20, 480)">
+                        <rect width="340" height="90" rx="12" fill="#fff" stroke="#eee" stroke-width="1"/>
+                        <text x="15" y="25" font-size="14" fill="#999">3:47 PM</text>
+                        <text x="15" y="45" font-size="16" font-weight="600">Gaming limit</text>
+                        <text x="15" y="65" font-size="14" fill="#666">→ Chose: 5 Air Squats</text>
+                        <g transform="translate(240, 50)">
+                            <text x="0" y="0" font-size="14" font-weight="600" fill="#667eea" text-anchor="end">8m</text>
+                            <text x="10" y="0" font-size="14">💪</text>
+                        </g>
+                    </g>
+                    
+                    <!-- Bottom Tab Bar -->
+                    <rect x="10" y="740" width="360" height="70" fill="#f8f9fa"/>
+                    <g transform="translate(45, 755)">
+                        <text x="0" y="25" font-size="24" text-anchor="middle">🏠</text>
+                        <text x="0" y="42" font-size="11" text-anchor="middle" fill="#999">Home</text>
+                    </g>
+                    <g transform="translate(135, 755)">
+                        <text x="0" y="25" font-size="24" text-anchor="middle">📊</text>
+                        <text x="0" y="42" font-size="11" text-anchor="middle" fill="#667eea">Journal</text>
+                    </g>
+                    <g transform="translate(225, 755)">
+                        <text x="0" y="25" font-size="24" text-anchor="middle">🎯</text>
+                        <text x="0" y="42" font-size="11" text-anchor="middle" fill="#999">Choices</text>
+                    </g>
+                    <g transform="translate(315, 755)">
+                        <text x="0" y="25" font-size="24" text-anchor="middle">⚙️</text>
+                        <text x="0" y="42" font-size="11" text-anchor="middle" fill="#999">Settings</text>
+                    </g>
+                </svg>
+                <div class="description">
+                    Two tabs: "Today's Choices" shows all fork victories with random positive emojis. "Completed" tab shows finished tasks with option to reactivate. Every choice celebrated equally. No pressure on records.
+                </div>
+            </div>
+            
+            <!-- Great Choice Confirmation -->
+            <div class="mockup-card">
+                <h3 class="mockup-title">Great Choice! Confirmation</h3>
+                <svg class="phone-frame" viewBox="0 0 380 820" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Phone Frame -->
+                    <rect width="380" height="820" rx="40" fill="#000"/>
+                    <rect x="10" y="10" width="360" height="800" rx="35" fill="#fff"/>
+                    
+                    <!-- Header -->
+                    <rect x="10" y="10" width="360" height="44" rx="35" fill="#f8f9fa"/>
+                    <text x="30" y="37" font-size="16" font-weight="600">9:41 AM</text>
+                    
+                    <!-- Success Animation Circle -->
+                    <circle cx="190" cy="160" r="60" fill="#f0f4ff"/>
+                    <text x="190" y="175" font-size="48" text-anchor="middle">🎉</text>
+                    
+                    <!-- Title -->
+                    <text x="190" y="250" font-size="32" font-weight="700" text-anchor="middle">Great Choice!</text>
+                    
+                    <!-- Details Card -->
+                    <g transform="translate(40, 290)">
+                        <rect width="300" height="140" rx="16" fill="#f8f9fa"/>
+                        
+                        <!-- Limit Info -->
+                        <text x="20" y="30" font-size="14" fill="#666">You spent</text>
+                        <text x="20" y="50" font-size="24" font-weight="600">30 minutes</text>
+                        <text x="20" y="70" font-size="14" fill="#666">on Social Media</text>
+                        
+                        <!-- Choice Info -->
+                        <line x1="20" y1="85" x2="280" y2="85" stroke="#e5e5e7" stroke-width="1"/>
+                        <text x="20" y="105" font-size="14" fill="#666">You chose</text>
+                        <text x="20" y="125" font-size="20" font-weight="600">Walk around the block 🚶</text>
+                    </g>
+                    
+                    <!-- Practical Tip -->
+                    <g transform="translate(40, 450)">
+                        <rect width="300" height="60" rx="12" fill="#f0f4ff"/>
+                        <text x="15" y="25" font-size="14" font-weight="600" fill="#667eea">💡 Pro tip:</text>
+                        <text x="15" y="42" font-size="13" fill="#666">Your place is saved in most apps. If something</text>
+                        <text x="15" y="56" font-size="13" fill="#666">really matters, screenshot it first.</text>
+                    </g>
+                    
+                    <!-- Motivational Text -->
+                    <text x="190" y="540" font-size="16" fill="#667eea" text-anchor="middle">Your record: 2h 15m</text>
+                    <text x="190" y="565" font-size="14" fill="#999" text-anchor="middle">Every minute away is a win.</text>
+                    
+                    <!-- Action Button -->
+                    <g transform="translate(40, 590)">
+                        <rect width="300" height="56" rx="28" fill="#667eea"/>
+                        <text x="150" y="36" font-size="18" font-weight="600" fill="white" text-anchor="middle">Let's go! →</text>
+                    </g>
+                    
+                    <!-- Mark Complete Option (if completable) -->
+                    <g transform="translate(40, 660)">
+                        <rect width="300" height="44" rx="22" fill="none" stroke="#667eea" stroke-width="2"/>
+                        <text x="150" y="28" font-size="16" fill="#667eea" text-anchor="middle">Mark as complete ✔</text>
+                    </g>
+                </svg>
+                <div class="description">
+                    Positive reinforcement after choosing. Shows practical tip to reduce anxiety about leaving apps. "Your record: 2h 15m. Every minute away is a win." No pressure to beat records.
+                </div>
+            </div>
+            
+        </div>
+<!-- Settings Section -->
+<h2 class="section-title">Settings & Education</h2>
+<div class="mockup-grid">
+    
+    <!-- Main Settings Screen -->
+    <div class="mockup-card">
+        <h3 class="mockup-title">Settings - Main</h3>
+        <svg class="phone-frame" viewBox="0 0 380 820" xmlns="http://www.w3.org/2000/svg">
+            <!-- Phone Frame -->
+            <rect width="380" height="820" rx="40" fill="#000"/>
+            <rect x="10" y="10" width="360" height="800" rx="35" fill="#f8f9fa"/>
+            
+            <!-- Status Bar -->
+            <rect x="10" y="10" width="360" height="44" rx="35" fill="white"/>
+            <text x="30" y="37" font-size="16" font-weight="600">9:41 AM</text>
+            
+            <!-- Header -->
+            <text x="30" y="90" font-size="32" font-weight="700">Settings</text>
+            
+            <!-- Timing Section -->
+            <text x="30" y="135" font-size="13" font-weight="600" fill="#6c6c70">TIMING</text>
+            
+            <!-- Snooze Duration -->
+            <g transform="translate(20, 150)">
+                <rect width="340" height="60" rx="12" fill="white"/>
+                <text x="20" y="25" font-size="16">⏰</text>
+                <text x="50" y="25" font-size="17">Snooze Duration</text>
+                <text x="50" y="45" font-size="14" fill="#999">How long to pause limits</text>
+                <text x="320" y="35" font-size="16" fill="#667eea" text-anchor="end">5 min ›</text>
+            </g>
+            
+            <!-- Take a Break -->
+            <g transform="translate(20, 220)">
+                <rect width="340" height="60" rx="12" fill="white"/>
+                <text x="20" y="25" font-size="16">😴</text>
+                <text x="50" y="25" font-size="17">Take a Break from Fork</text>
+                <text x="50" y="45" font-size="14" fill="#999">Pause all limits temporarily</text>
+                <text x="320" y="35" font-size="17" fill="#c7c7cc" text-anchor="end">›</text>
+            </g>
+            
+            <!-- Grace Period -->
+            <g transform="translate(20, 290)">
+                <rect width="340" height="60" rx="12" fill="white"/>
+                <text x="20" y="25" font-size="16">✨</text>
+                <text x="50" y="25" font-size="17">Grace Period</text>
+                <text x="50" y="45" font-size="14" fill="#999">Free time after making a choice</text>
+                <text x="320" y="35" font-size="16" fill="#667eea" text-anchor="end">30 min ›</text>
+            </g>
+            
+            <!-- Progressive Snooze Toggle -->
+            <g transform="translate(20, 360)">
+                <rect width="340" height="60" rx="12" fill="white"/>
+                <text x="20" y="25" font-size="16">📉</text>
+                <text x="50" y="25" font-size="17">Progressive Snooze</text>
+                <text x="50" y="45" font-size="14" fill="#999">Snooze gets shorter each time</text>
+                <!-- Toggle Switch -->
+                <rect x="280" y="20" width="50" height="30" rx="15" fill="#e5e5e7"/>
+                <circle cx="295" cy="35" r="12" fill="white"/>
+            </g>
+            
+            <!-- Fork Philosophy Section -->
+            <text x="30" y="455" font-size="13" font-weight="600" fill="#6c6c70">FORK PHILOSOPHY</text>
+            
+            <!-- Using Fork Well -->
+            <g transform="translate(20, 470)">
+                <rect width="340" height="50" rx="12" fill="white"/>
+                <text x="20" y="30" font-size="16">💡</text>
+                <text x="50" y="30" font-size="17">Using Fork Well</text>
+                <text x="320" y="30" font-size="17" fill="#c7c7cc" text-anchor="end">›</text>
+            </g>
+            
+            <!-- Behind the Curtain -->
+            <g transform="translate(20, 530)">
+                <rect width="340" height="50" rx="12" fill="white"/>
+                <text x="20" y="30" font-size="16">🎭</text>
+                <text x="50" y="30" font-size="17">Behind the Curtain</text>
+                <rect x="230" y="15" width="40" height="20" rx="10" fill="#ff3b30"/>
+                <text x="250" y="28" font-size="11" fill="white" text-anchor="middle">NEW</text>
+                <text x="320" y="30" font-size="17" fill="#c7c7cc" text-anchor="end">›</text>
+            </g>
+            
+            <!-- Why Fork Works -->
+            <g transform="translate(20, 590)">
+                <rect width="340" height="50" rx="12" fill="white"/>
+                <text x="20" y="30" font-size="16">🧠</text>
+                <text x="50" y="30" font-size="17">Why Fork Works</text>
+                <text x="320" y="30" font-size="17" fill="#c7c7cc" text-anchor="end">›</text>
+            </g>
+            
+            <!-- About Section -->
+            <text x="30" y="675" font-size="13" font-weight="600" fill="#6c6c70">ABOUT</text>
+            
+            <!-- About -->
+            <g transform="translate(20, 690)">
+                <rect width="340" height="50" rx="12" fill="white"/>
+                <text x="20" y="30" font-size="16">ℹ️</text>
+                <text x="50" y="30" font-size="17">About Fork</text>
+                <text x="320" y="30" font-size="17" fill="#c7c7cc" text-anchor="end">›</text>
+            </g>
+            
+            <!-- Bottom Tab Bar -->
+            <rect x="10" y="740" width="360" height="70" fill="white"/>
+            <g transform="translate(45, 755)">
+                <text x="0" y="25" font-size="24" text-anchor="middle">🏠</text>
+                <text x="0" y="42" font-size="11" text-anchor="middle" fill="#999">Home</text>
+            </g>
+            <g transform="translate(135, 755)">
+                <text x="0" y="25" font-size="24" text-anchor="middle">📊</text>
+                <text x="0" y="42" font-size="11" text-anchor="middle" fill="#999">Journal</text>
+            </g>
+            <g transform="translate(225, 755)">
+                <text x="0" y="25" font-size="24" text-anchor="middle">🎯</text>
+                <text x="0" y="42" font-size="11" text-anchor="middle" fill="#999">Choices</text>
+            </g>
+            <g transform="translate(315, 755)">
+                <text x="0" y="25" font-size="24" text-anchor="middle">⚙️</text>
+                <text x="0" y="42" font-size="11" text-anchor="middle" fill="#667eea">Settings</text>
+            </g>
+        </svg>
+        <div class="description">
+            Main settings with timing controls all grouped together (including "Take a Break from Fork"), Fork philosophy section with educational content, and About section.
+        </div>
+    </div>
+    
+    <!-- Behind the Curtain - Main Menu -->
+    <div class="mockup-card">
+        <h3 class="mockup-title">Behind the Curtain - Dark Patterns Menu</h3>
+        <svg class="phone-frame" viewBox="0 0 380 820" xmlns="http://www.w3.org/2000/svg">
+            <!-- Phone Frame -->
+            <rect width="380" height="820" rx="40" fill="#000"/>
+            <rect x="10" y="10" width="360" height="800" rx="35" fill="#fff"/>
+            
+            <!-- Status Bar -->
+            <rect x="10" y="10" width="360" height="44" rx="35" fill="#f8f9fa"/>
+            <text x="30" y="37" font-size="16" font-weight="600">9:41 AM</text>
+            
+            <!-- Navigation -->
+            <text x="30" y="90" font-size="18" fill="#667eea">‹ Settings</text>
+            
+            <!-- Title -->
+            <text x="30" y="140" font-size="28" font-weight="700">Behind the Curtain</text>
+            <text x="30" y="170" font-size="16" fill="#666">How apps manipulate your attention</text>
+            
+            <!-- Warning Card -->
+            <g transform="translate(20, 200)">
+                <rect width="340" height="80" rx="12" fill="#fff0f0"/>
+                <text x="20" y="30" font-size="16">⚠️ Knowledge is power</text>
+                <text x="20" y="50" font-size="14" fill="#666">Understanding these tricks reduces their</text>
+                <text x="20" y="68" font-size="14" fill="#666">effectiveness. You can't unsee the matrix.</text>
+            </g>
+            
+            <!-- Section 1 -->
+            <g transform="translate(20, 300)">
+                <rect width="340" height="100" rx="12" fill="white" stroke="#eee" stroke-width="1"/>
+                <text x="20" y="30" font-size="20">🎰</text>
+                <text x="50" y="30" font-size="18" font-weight="600">What Makes You Keep Scrolling</text>
+                <text x="20" y="55" font-size="14" fill="#666">Infinite scroll, pull-to-refresh, lost place</text>
+                <text x="20" y="73" font-size="14" fill="#666">anxiety, "someone is typing..."</text>
+                <text x="320" y="50" font-size="17" fill="#c7c7cc" text-anchor="end">›</text>
+            </g>
+            
+            <!-- Section 2 -->
+            <g transform="translate(20, 420)">
+                <rect width="340" height="100" rx="12" fill="white" stroke="#eee" stroke-width="1"/>
+                <text x="20" y="30" font-size="20">🔴</text>
+                <text x="50" y="30" font-size="18" font-weight="600">What Keeps You Coming Back</text>
+                <text x="20" y="55" font-size="14" fill="#666">Red badges, disappearing stories,</text>
+                <text x="20" y="73" font-size="14" fill="#666">streak counters, "you might like..."</text>
+                <text x="320" y="50" font-size="17" fill="#c7c7cc" text-anchor="end">›</text>
+            </g>
+            
+            <!-- Section 3 -->
+            <g transform="translate(20, 540)">
+                <rect width="340" height="100" rx="12" fill="white" stroke="#eee" stroke-width="1"/>
+                <text x="20" y="30" font-size="20">💰</text>
+                <text x="50" y="30" font-size="18" font-weight="600">What They Get Out of It</text>
+                <text x="20" y="55" font-size="14" fill="#666">Your attention = $30-60/quarter</text>
+                <text x="20" y="73" font-size="14" fill="#666">1,500+ data points collected daily</text>
+                <text x="320" y="50" font-size="17" fill="#c7c7cc" text-anchor="end">›</text>
+            </g>
+        </svg>
+        <div class="description">
+            Educational hub revealing dark patterns used by social media and apps. Three sections explaining manipulation tactics, organized by psychological impact and business model.
+        </div>
+    </div>
+    
+    <!-- Behind the Curtain - Keep Scrolling -->
+    <div class="mockup-card">
+        <h3 class="mockup-title">What Makes You Keep Scrolling</h3>
+        <svg class="phone-frame" viewBox="0 0 380 820" xmlns="http://www.w3.org/2000/svg">
+            <!-- Phone Frame -->
+            <rect width="380" height="820" rx="40" fill="#000"/>
+            <rect x="10" y="10" width="360" height="800" rx="35" fill="#fff"/>
+            
+            <!-- Status Bar -->
+            <rect x="10" y="10" width="360" height="44" rx="35" fill="#f8f9fa"/>
+            <text x="30" y="37" font-size="16" font-weight="600">9:41 AM</text>
+            
+            <!-- Navigation -->
+            <text x="30" y="90" font-size="18" fill="#667eea">‹ Back</text>
+            
+            <!-- Title -->
+            <text x="30" y="130" font-size="24" font-weight="700">What Makes You</text>
+            <text x="30" y="160" font-size="24" font-weight="700">Keep Scrolling 🎰</text>
+            
+            <!-- Infinite Scroll -->
+            <g transform="translate(20, 190)">
+                <rect width="340" height="150" rx="12" fill="#f8f9fa"/>
+                <text x="20" y="30" font-size="18" font-weight="600">♾️ Infinite Scroll</text>
+                <text x="20" y="55" font-size="14" font-weight="600" fill="#667eea">What it is:</text>
+                <text x="20" y="73" font-size="13" fill="#333">No exit cues, like casinos without clocks</text>
+                <text x="20" y="95" font-size="14" font-weight="600" fill="#667eea">What it triggers:</text>
+                <text x="20" y="113" font-size="13" fill="#333">Decision fatigue bypass</text>
+                <text x="20" y="133" font-size="14" font-weight="600" fill="#667eea">Why it works:</text>
+                <text x="20" y="151" font-size="13" fill="#333">Brain never gets the "done" signal</text>
+            </g>
+            
+            <!-- Pull to Refresh -->
+            <g transform="translate(20, 355)">
+                <rect width="340" height="150" rx="12" fill="#f8f9fa"/>
+                <text x="20" y="30" font-size="18" font-weight="600">↓ Pull-to-Refresh</text>
+                <text x="20" y="55" font-size="14" font-weight="600" fill="#667eea">What it is:</text>
+                <text x="20" y="73" font-size="13" fill="#333">Variable ratio reinforcement = slot machine</text>
+                <text x="20" y="95" font-size="14" font-weight="600" fill="#667eea">What it triggers:</text>
+                <text x="20" y="113" font-size="13" fill="#333">Dopamine during the pull, not the result</text>
+                <text x="20" y="133" font-size="14" font-weight="600" fill="#667eea">Why it works:</text>
+                <text x="20" y="151" font-size="13" fill="#333">Same mechanism as gambling addiction</text>
+            </g>
+            
+            <!-- Lost Place Anxiety -->
+            <g transform="translate(20, 520)">
+                <rect width="340" height="150" rx="12" fill="#f8f9fa"/>
+                <text x="20" y="30" font-size="18" font-weight="600">😰 Lost Place Anxiety</text>
+                <text x="20" y="55" font-size="14" font-weight="600" fill="#667eea">What it is:</text>
+                <text x="20" y="73" font-size="13" fill="#333">Intentionally not saving scroll position</text>
+                <text x="20" y="95" font-size="14" font-weight="600" fill="#667eea">What it triggers:</text>
+                <text x="20" y="113" font-size="13" fill="#333">FOMO about "missing that perfect post"</text>
+                <text x="20" y="133" font-size="14" font-weight="600" fill="#667eea">Why it works:</text>
+                <text x="20" y="151" font-size="13" fill="#333">Loss aversion - losing feels 2x worse</text>
+            </g>
+        </svg>
+        <div class="description">
+            Deep dive into scrolling mechanics: infinite scroll removes stopping points, pull-to-refresh exploits gambling psychology, lost place anxiety creates FOMO. Each pattern explained with mechanism, trigger, and psychology.
+        </div>
+    </div>
+    
+    <!-- Behind the Curtain - Coming Back -->
+    <div class="mockup-card">
+        <h3 class="mockup-title">What Keeps You Coming Back</h3>
+        <svg class="phone-frame" viewBox="0 0 380 820" xmlns="http://www.w3.org/2000/svg">
+            <!-- Phone Frame -->
+            <rect width="380" height="820" rx="40" fill="#000"/>
+            <rect x="10" y="10" width="360" height="800" rx="35" fill="#fff"/>
+            
+            <!-- Status Bar -->
+            <rect x="10" y="10" width="360" height="44" rx="35" fill="#f8f9fa"/>
+            <text x="30" y="37" font-size="16" font-weight="600">9:41 AM</text>
+            
+            <!-- Navigation -->
+            <text x="30" y="90" font-size="18" fill="#667eea">‹ Back</text>
+            
+            <!-- Title -->
+            <text x="30" y="130" font-size="24" font-weight="700">What Keeps You</text>
+            <text x="30" y="160" font-size="24" font-weight="700">Coming Back 🔴</text>
+            
+            <!-- Red Badges -->
+            <g transform="translate(20, 190)">
+                <rect width="340" height="150" rx="12" fill="#f8f9fa"/>
+                <text x="20" y="30" font-size="18" font-weight="600">🔴 Red Notification Badges</text>
+                <text x="20" y="55" font-size="14" font-weight="600" fill="#667eea">What it is:</text>
+                <text x="20" y="73" font-size="13" fill="#333">Hijacking evolutionary danger signals</text>
+                <text x="20" y="95" font-size="14" font-weight="600" fill="#667eea">What it triggers:</text>
+                <text x="20" y="113" font-size="13" fill="#333">Cortisol spike, fight-or-flight response</text>
+                <text x="20" y="133" font-size="14" font-weight="600" fill="#667eea">Why it works:</text>
+                <text x="20" y="151" font-size="13" fill="#333">200,000 years of evolution says red = threat</text>
+            </g>
+            
+            <!-- Disappearing Stories -->
+            <g transform="translate(20, 355)">
+                <rect width="340" height="150" rx="12" fill="#f8f9fa"/>
+                <text x="20" y="30" font-size="18" font-weight="600">⏰ Stories That Disappear</text>
+                <text x="20" y="55" font-size="14" font-weight="600" fill="#667eea">What it is:</text>
+                <text x="20" y="73" font-size="13" fill="#333">24-hour timers creating artificial scarcity</text>
+                <text x="20" y="95" font-size="14" font-weight="600" fill="#667eea">What it triggers:</text>
+                <text x="20" y="113" font-size="13" fill="#333">Urgency, FOMO, compulsive checking</text>
+                <text x="20" y="133" font-size="14" font-weight="600" fill="#667eea">Why it works:</text>
+                <text x="20" y="151" font-size="13" fill="#333">Scarcity bias makes anything limited valuable</text>
+            </g>
+            
+            <!-- Streak Counters -->
+            <g transform="translate(20, 520)">
+                <rect width="340" height="150" rx="12" fill="#f8f9fa"/>
+                <text x="20" y="30" font-size="18" font-weight="600">🔥 Streak Counters</text>
+                <text x="20" y="55" font-size="14" font-weight="600" fill="#667eea">What it is:</text>
+                <text x="20" y="73" font-size="13" fill="#333">Making you feel you'll "lose" progress</text>
+                <text x="20" y="95" font-size="14" font-weight="600" fill="#667eea">What it triggers:</text>
+                <text x="20" y="113" font-size="13" fill="#333">Sunk cost fallacy, turns apps into obligations</text>
+                <text x="20" y="133" font-size="14" font-weight="600" fill="#667eea">Why it works:</text>
+                <text x="20" y="151" font-size="13" fill="#333">You value what you've "invested" in</text>
+            </g>
+        </svg>
+        <div class="description">
+            Retention mechanics exposed: red badges trigger evolutionary threat response, disappearing content creates artificial urgency, streaks exploit sunk cost fallacy. Understanding = immunity.
+        </div>
+    </div>
+    
+    <!-- Behind the Curtain - Economics -->
+    <div class="mockup-card">
+        <h3 class="mockup-title">What They Get Out of It</h3>
+        <svg class="phone-frame" viewBox="0 0 380 820" xmlns="http://www.w3.org/2000/svg">
+            <!-- Phone Frame -->
+            <rect width="380" height="820" rx="40" fill="#000"/>
+            <rect x="10" y="10" width="360" height="800" rx="35" fill="#fff"/>
+            
+            <!-- Status Bar -->
+            <rect x="10" y="10" width="360" height="44" rx="35" fill="#f8f9fa"/>
+            <text x="30" y="37" font-size="16" font-weight="600">9:41 AM</text>
+            
+            <!-- Navigation -->
+            <text x="30" y="90" font-size="18" fill="#667eea">‹ Back</text>
+            
+            <!-- Title -->
+            <text x="30" y="130" font-size="24" font-weight="700">What They Get</text>
+            <text x="30" y="160" font-size="24" font-weight="700">Out of It 💰</text>
+            
+            <!-- Your Value Card -->
+            <g transform="translate(20, 190)">
+                <rect width="340" height="120" rx="12" fill="#fff0f0"/>
+                <text x="20" y="30" font-size="18" font-weight="600">📊 Your Attention Value</text>
+                <text x="20" y="55" font-size="20" font-weight="400">$30-60</text>
+                <text x="95" y="55" font-size="14" fill="#666">per quarter in ad revenue</text>
+                <text x="20" y="80" font-size="20" font-weight="400">$200-400</text>
+                <text x="120" y="80" font-size="14" fill="#666">per year from your 2.5 hours daily</text>
+                <text x="20" y="105" font-size="14" fill="#666">30 min scrolling ≈ $0.50 in someone's pocket</text>
+            </g>
+            
+            <!-- Data Collection -->
+            <g transform="translate(20, 330)">
+                <rect width="340" height="100" rx="12" fill="#f0f4ff"/>
+                <text x="20" y="30" font-size="18" font-weight="600">📱 Data Harvesting</text>
+                <text x="20" y="55" font-size="20" font-weight="400">1,500+</text>
+                <text x="85" y="55" font-size="14" fill="#666">behavioral data points per day</text>
+                <text x="20" y="80" font-size="14" fill="#666">Every scroll, tap, pause = more data to</text>
+                <text x="20" y="98" font-size="14" fill="#666">perfect the addiction algorithm</text>
+            </g>
+            
+            <!-- The Real Transaction -->
+            <g transform="translate(20, 450)">
+                <rect width="340" height="140" rx="12" fill="#f8f9fa"/>
+                <text x="20" y="30" font-size="18" font-weight="600">🎯 The Real Transaction</text>
+                <text x="20" y="55" font-size="14" fill="#333">You're not the customer, you're the product</text>
+                <text x="20" y="77" font-size="14" fill="#333">Your anxiety = their engagement metrics</text>
+                <text x="20" y="99" font-size="14" fill="#333">Your FOMO = their quarterly growth</text>
+                <text x="20" y="121" font-size="14" fill="#333">Your "one more scroll" = their IPO valuation</text>
+            </g>
+            
+            <!-- Scale -->
+            <g transform="translate(20, 610)">
+                <rect width="340" height="80" rx="12" fill="#fff9e6"/>
+                <text x="20" y="30" font-size="18" font-weight="600">🌍 The Scale</text>
+                <text x="20" y="50" font-size="14" font-weight="700">3 billion users × $200/year =</text>
+                <text x="20" y="70" font-size="20" font-weight="700" fill="#ff6b6b">$600 billion industry</text>
+            </g>
+        </svg>
+        <div class="description">
+            The economics exposed: Your attention worth $30-60/quarter. Every 30 minutes = $0.50 revenue. 1,500+ data points collected daily. Your peace of mind is literally their business model.
+        </div>
+    </div>
+    
+    <!-- Take a Break Screen -->
+    <div class="mockup-card">
+        <h3 class="mockup-title">Take a Break from Fork</h3>
+        <svg class="phone-frame" viewBox="0 0 380 820" xmlns="http://www.w3.org/2000/svg">
+            <!-- Phone Frame -->
+            <rect width="380" height="820" rx="40" fill="#000"/>
+            <rect x="10" y="10" width="360" height="800" rx="35" fill="#fff"/>
+            
+            <!-- Status Bar -->
+            <rect x="10" y="10" width="360" height="44" rx="35" fill="#f8f9fa"/>
+            <text x="30" y="37" font-size="16" font-weight="600">9:41 AM</text>
+            
+            <!-- Navigation -->
+            <text x="30" y="90" font-size="18" fill="#667eea">‹ Settings</text>
+            
+            <!-- Title -->
+            <text x="30" y="140" font-size="28" font-weight="700">Take a Break</text>
+            <text x="30" y="170" font-size="16" fill="#666">Pause Fork temporarily</text>
+            
+            <!-- Info Card -->
+            <g transform="translate(20, 200)">
+                <rect width="340" height="80" rx="12" fill="#f0f4ff"/>
+                <text x="20" y="30" font-size="16">💡 Sometimes you need to focus</text>
+                <text x="20" y="50" font-size="14" fill="#666">Fork will pause all limits and notifications.</text>
+                <text x="20" y="68" font-size="14" fill="#666">We trust you to know what you need.</text>
+            </g>
+            
+            <!-- Duration Options -->
+            <text x="30" y="310" font-size="16" font-weight="600">How long?</text>
+            
+            <!-- 2 Hours -->
+            <g transform="translate(20, 330)">
+                <rect width="340" height="70" rx="12" fill="white" stroke="#667eea" stroke-width="2"/>
+                <circle cx="30" cy="35" r="10" fill="#667eea"/>
+                <circle cx="30" cy="35" r="4" fill="white"/>
+                <text x="55" y="30" font-size="18" font-weight="600">2 hours</text>
+                <text x="55" y="50" font-size="14" fill="#666">Back at 11:41 AM</text>
+            </g>
+            
+            <!-- Rest of Today -->
+            <g transform="translate(20, 415)">
+                <rect width="340" height="70" rx="12" fill="white" stroke="#ddd" stroke-width="1"/>
+                <circle cx="30" cy="35" r="10" fill="none" stroke="#ddd" stroke-width="2"/>
+                <text x="55" y="30" font-size="18" font-weight="600">Rest of today</text>
+                <text x="55" y="50" font-size="14" fill="#666">Back at midnight</text>
+            </g>
+            
+            <!-- Until Tomorrow -->
+            <g transform="translate(20, 500)">
+                <rect width="340" height="70" rx="12" fill="white" stroke="#ddd" stroke-width="1"/>
+                <circle cx="30" cy="35" r="10" fill="none" stroke="#ddd" stroke-width="2"/>
+                <text x="55" y="30" font-size="18" font-weight="600">Until tomorrow morning</text>
+                <text x="55" y="50" font-size="14" fill="#666">Back at 6:00 AM tomorrow</text>
+            </g>
+            
+            <!-- Optional Note -->
+            <text x="30" y="605" font-size="16" font-weight="600">Add a note (optional)</text>
+            <g transform="translate(20, 625)">
+                <rect width="340" height="50" rx="10" fill="#f8f9fa" stroke="#ddd" stroke-width="1"/>
+                <text x="15" y="32" font-size="16" fill="#999">Deep work session...</text>
+            </g>
+            
+            <!-- Confirm Button -->
+            <g transform="translate(40, 700)">
+                <rect width="300" height="56" rx="28" fill="#667eea"/>
+                <text x="150" y="36" font-size="16" font-weight="600" fill="white" text-anchor="middle">Take a Break</text>
+            </g>
+        </svg>
+        <div class="description">
+            No judgment break system: 2 hours, rest of day, or until tomorrow. Optional journal note. Simple confirmation. Shows trust in user's self-knowledge about when they need uninterrupted time.
+        </div>
+    </div>
+    
+</div>
+
+</div>
+
+<footer style="text-align: center; color: white; margin-top: 60px; padding: 20px;">
+<p style="opacity: 0.9;">Fork doesn't want your data. Fork wants you to be human.</p>
+<p style="opacity: 0.7; margin-top: 10px;">© 2025 Fork App</p>
+</footer>
